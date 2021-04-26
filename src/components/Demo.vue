@@ -1,0 +1,53 @@
+<template>
+  <div class="background">
+    <div id="earth"></div>
+  </div>
+</template>
+
+
+
+<script>
+export default {
+  name: "Demo",
+};
+</script>
+
+
+<style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(2, 16, 31, 1);
+}
+
+#earth {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: url("https://i.postimg.cc/d0bNh1pn/stylized-earth-01.jpg");
+  background-size: 545px;
+  background-position: center;
+  background-color: #0c55ad;
+  box-shadow: inset -20px 20px 40px rgba(235, 225, 52, 0.3),
+    inset 20px -20px 40px rgba(2, 16, 31, 0.5),
+    inset 10px -10px 10px rgba(2, 16, 31, 0.5);
+  transform-style: preserve-3d;
+  transform: rotate(15deg);
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 545px 0;
+  }
+}
+</style>
