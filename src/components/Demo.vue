@@ -22,7 +22,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(2, 16, 31, 1);
 }
 
 #earth {
